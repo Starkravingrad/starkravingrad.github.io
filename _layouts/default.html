@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="author" content="Garrett Criss">
+<meta name="Keywords" content=" ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The homepage of LYCRA.beats. Stretchy Music Enthusiast.">
+
+    <title>LYCRA.beats &ndash;  Home</title>
+
+
+
+
+<link rel="stylesheet" href="http://starkravingrad.github.io/css/pure-min.css">
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+
+<![endif]-->
+<!--[if gt IE 8]><!-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+<!--<![endif]-->
+
+
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="#" class="heading"><img class="displayed" src="img/logoicon.png"></img></a>
+    <ul>
+        <li class="pure-menu-selected"><a href="/index.html"><i class="fa fa-home fa-1x"></i></a></li>
+        <li ><a href="/tunes.html"><i class="fa fa-music fa-1x"></i></a></li>
+        <li><a href="/blog.html"><i class="fa fa-edit fa-1x"></i></a></li>
+        <li><a href="/contact.html"><i class="fa fa-envelope fa-1x"></i></a></li>
+        <li><a href="/downloads.html"><i class="fa fa-cloud-upload fa-1x"></i></a></li>
+    </ul>
+</div>
+
+<div class="banner">
+    <h1 class="banner-head">
+        Stretchy
+        Bass Music.
+    </h1>
+</div>
+
+
+
+
+    <div class="information pure-g">
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+
+
+               {% for post in site.categories.headleft limit:1 %}
+                <h3 class="information-head">{{ post.title }}</h3>
+              {{ post.excerpt }}
+              <a href="{{ post.url }}">
+               Read more...
+              </a>
+              {% endfor %}
+
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+               {% for post in site.categories.headright limit:1 %}
+                <h3 class="information-head">{{ post.title }}</h3>
+              {{ post.excerpt }}
+                <a href="{{ post.url }}">
+                    Read more...
+                </a>
+              {% endfor %}
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">Upcoming Shows</h3>
+                <p>
+                  <ul class="recent-posts">
+                    {% for post in site.categories.shows limit:8 %}
+                     <li>
+
+                         <a class="" href="{{ BASE_PATH }}{{ post.url }}"><h5><i class="fa fa-calendar"></i> {{ post.title }}</h5> </a>
+                     </li>
+	                {% endfor %}
+                    </ul>
+</ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">Listen on Soundcloud</h3>
+                <p>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23561744&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                </p>
+            </div>
+        </div>
+    </div> <!-- end information -->
+<!-- end l-content -->
+
+<div class="footer l-box">
+    <p>
+
+        <ul class=" contact">
+      <li>
+            <a href="https://soundcloud.com/lycrabeats" class="fa fa-soundcloud fa-1x">
+                <span>Soundcloud</span>
+            </a>
+      </li>
+       <li>
+            <a href="http://westcoastwashingmachine.com" class="fa fa-headphones fa-1x">
+                <span>West Coast Washing Machine</span>
+            </a>
+      </li>
+      <li>
+            <a href="http://lykrabeats.bandcamp.com" class="fa fa-music fa-1x">
+                <span>Bandcamp</span>
+            </a>
+      </li>
+      <li>
+            <a href="https://twitter.com/lycrabeats" class="fa fa-twitter fa-1x">
+                <span>Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://facebook.com/lycrabeets" class="fa fa-facebook fa-1x">
+                <span>Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://instagram.com/lycrabeats" class="fa fa-camera-retro fa-1x">
+                <span>Instagram</span>
+            </a>
+        </li>
+           <li>
+            <a href="http://instagram.com/lycrabeats" class="fa fa-rss fa-1x">
+                <span>RSS</span>
+            </a>
+        </li>
+
+  </ul>
+ <span class="copyright">&copy; LYCRA.beats 2014 - Design By: <a href="http://lycrabeats.com">Garrett Criss</a></span>
+    </p>
+</div>
+
+<script>
+
+</script>
+
+
+</body>
+</html>
