@@ -6,6 +6,7 @@ category: headright
 Hailing from the Land of Bass Ships and Snare Planes, Colorado's premier Psychedelic Bass Artists Cloud-D and Resonant Language of The Mile High Sound Movement bombard Washington with a heavy dose of Squashtastic Tunes July 9th-12th. The two have teamed up with the intent to squash every genre of music. Hold your hats people we are about to enter warp speed.
 
 Stay Tuned for Announcements regarding Venue Locations next week!
+<img class="pure-img" src="http://starkravingrad.github.io/img/basships.jpg"></img>
 
 ###Music links.
 
