@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "7/10/14 - Bellingham, WA"
+title:  "7/19/14 - Rumours Cabaret - Bellingham, WA"
 tags: [Jekyll]
 category: shows
 ---
