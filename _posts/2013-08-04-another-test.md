@@ -1,16 +1,8 @@
 ---
 layout: post
-title: "7/12/14 - Wenatchee, WA"
+title: "7/12/14 - Cosmic Campout III"
 tags: [Jekyll]
 category: shows
 ---
 
-This is another test for Jekyll-Pure.
-
-### Test for highlight.
-
-<!--more-->
-
-### Test for split
-
-Hello, Jekyll-Pure.
+WOOOOO WASHINGTON
