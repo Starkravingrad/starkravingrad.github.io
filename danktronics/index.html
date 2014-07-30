@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+    <title>Pricing Table &ndash; Layout Examples &ndash; Pure</title>
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+
+
+<!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+
+<![endif]-->
+<!--[if gt IE 8]><!-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+<!--<![endif]-->
+
+
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+
+
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//unslider.com/unslider.min.js"></script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+<header>
+
+    </header>
+
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading">DankTronics</a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="pure-menu-selected"><a href="#">Shop</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div class="slider">
+    <ul>
+        <li>
+            <div class="banner">
+                <h1 class="banner-head">
+               River wash cold.<br>
+                Sun dry high.
+                </h1>
+
+            </div>
+        </li>
+
+        <li>
+            <div class="banner2">
+                <h1 class="banner-head">
+                Yeah dog.
+                </h1>
+
+            </div>
+        </li>
+
+        <li>
+            <div class="banner3">
+                <h1 class="banner-head">
+                Young.<br>
+                Holla.
+                </h1>
+
+            </div>
+        </li>
+
+
+    </ul>
+</div>
+
+<script>
+    $(function() {
+    $('.slider').unslider({
+	speed: 1200,               //  The speed to animate each slide (in milliseconds)
+	delay: 6000,              //  The delay between slide animations (in milliseconds)
+	complete: function() {},  //  A function that gets called after every slide animation
+	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+	dots: true,               //  Display dot navigation
+	fluid: true              //  Support responsive design. May break non-responsive designs
+});
+
+});
+    </script>
+<div class="l-content">
+
+
+    <div class="information pure-g">
+        <div class="pure-u-3-5 ">
+            <div class="l-box">
+                <h3 class="information-head">Content Headline here</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-2-5 ">
+            <div class="l-box">
+                <h5>Recent Items</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo
+                    .
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </div> <!-- end information -->
+</div> <!-- end l-content -->
+
+<div class="footer l-box">
+    <p>
+        <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
+    </p>
+</div>
+
+
+
+
+</body>
+</html>
