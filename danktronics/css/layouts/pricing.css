@@ -6,6 +6,11 @@ body {
     color: #526066;
 }
 
+a:link {
+    color: #86bb63;
+
+
+}
 img {
     padding: 0px;
 }
@@ -28,9 +33,32 @@ p {
 }
 
 .l-box {
-    padding: 0.5em 2em;
+    padding: 2em;
 }
 
+.l-box-lrg {
+
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-round {
+ border-radius: 150px;
+}
+.is-center {
+    text-align: center;
+}
+
+/* This is the class used for the dark-background areas. */
+.ribbon {
+    background: #86bb63;
+    color: #444;
+    width: 100%;
+
+}
+
+.ribbon h1 {
+    color: solid white;
+}
 /*
  * -- MENU STYLES --
  * Make the menu have a very faint box-shadow.
@@ -57,7 +85,7 @@ p {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/ooomf-com-files/PcLGXNjMTdiFVKTrElCl__DSC2245.jpg', sizingMethod='scale');
     height: 440px;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 3.5em;
     margin-top: -43x;
     display: table;
     overflow: hidden;
@@ -223,6 +251,10 @@ p {
     font-weight: bold;
     position: relative;
     bottom: -1.5em;
+}
+
+.information {
+
 }
 
 .information-head {
