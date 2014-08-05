@@ -47,6 +47,10 @@ p {
 .is-round {
  border-radius: 150px;
 }
+.is-oval {
+ border-radius: 5px;
+}
+
 .is-center {
     text-align: center;
 }
@@ -62,6 +66,11 @@ p {
 
 .ribbon h1 {
     color: solid white;
+}
+
+.ribbon img {
+    margin-top: 1.5em;
+
 }
 /*
  * -- MENU STYLES --
@@ -80,6 +89,13 @@ p {
 .pure-menu img {
 
 }
+
+ .button-success {
+      color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            background: rgb(28, 184, 65); /* this is a green */
+        }
 /*
  * -- BANNER --
  * The top banner with the headings. By using a combination
@@ -174,6 +190,7 @@ p {
 .information-head {
     color: black;
     font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 
 .footer {
@@ -185,10 +202,57 @@ p {
         color: #ddd;
     }
 
+.footer h3 {
+   color: #fff;
+}
 .header {
     align-content: center;
     text-align: center;
 
+}
+
+/* Stylise the Social media buttons in the sidebar */
+ul.contact
+{
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+
+
+
+}
+ul.contact li
+{
+    display: inline-block;
+    font-size: 1.75em;
+    padding: 6px;
+
+
+}
+ul.contact li span
+{
+    display: none;
+}
+ul.contact li a
+{
+    opacity: 0.75;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+    text-decoration: none;
+    padding: 0;
+}
+ul.contact li a:hover
+{
+    opacity: 1.0;
+}
+
+.hideme {
+  opacity: 0;
 }
 
 /*
@@ -212,10 +276,11 @@ p {
  * On phones, we want to reduce the height and font-size of the banner further
  */
 @media (min-width: 480px) {
-    .banner {
-        height: 400px;
+    .banner1 {
+        height: 400xpx;
     }
     .banner-head {
         font-size: 3em;
     }
+
 }
