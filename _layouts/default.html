@@ -111,14 +111,33 @@
             <div class="l-box">
                 <h3 class="information-head">Upcoming Shows</h3>
                 
-                  <ul class="recent-posts">
-                    {% for post in site.categories.shows limit:8 %}
-                     <li>
-
-                         <a class="" href="{{ BASE_PATH }}{{ post.url }}"><h5><i class="fa fa-calendar"></i> {{ post.title }}</h5> </a>
-                     </li>
-	                {% endfor %}
-                    </ul>
+                   <div id="upto-calendar-container-VJMOKO" style="background-color: #333;" class="upto-calendar-plugin">
+                <script>
+                  ! function(c, b, a) {
+                    function d(h) {
+                      var e = document.getElementById("upto-calendar-container-" + c),
+                        f = document.createElement("SCRIPT"),
+                        g = "http://upto.com/js/embed.js";
+                      f.onreadystatechange = function() {
+                        if (f.readyState === "loaded" || f.readyState === "complete") {
+                          f.onreadystatechange = null;
+                          h()
+                        }
+                      };
+                      f.onload = function() {
+                        h()
+                      };
+                      f.setAttribute("src", g);
+                      e.parentNode.insertBefore(f, e)
+                    }
+                    d(function() {
+                      upto.init(c, b, a)
+                    })
+                  }("VJMOKO", ["l9YO"], {
+                    "template": "1"
+                  });
+                </script>
+              </div>
 
                
             </div>
