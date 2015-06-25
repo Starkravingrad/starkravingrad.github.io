@@ -1,94 +1,9 @@
-<!doctype html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-          <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  </head>
-  <body ng-app="lycrabeatscomApp" ng-controller="MainCtrl">
-    <!--[if lt IE 7]>
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.7c9b5ff2.css"> <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  <body ng-app="lycrabeatscomApp" ng-controller="MainCtrl"> <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-<div class="container content" >
-      <h1>LYCRA.<span class="">b</span><span class="">e</span><span class="">a</span><span class="">t</span><span class="">s</span></h1>
-      </div>
-    <div class="content1">
-     
-        </li><a ng-href="#/music" ng-click="modalOpen = true">MUSIC</a></li><br>
-        </li><a ng-href="#/info" ng-click="modalOpen = true">INFO</a></li><br>
-        </li><a ng-href="#/bio" ng-click="modalOpen = true">BIO</a></li><br>
-        </li><a ng-href="#/portfolio" ng-click="modalOpen = true">PORTFOLIO</a></li><br>
-        </li><a ng-href="#/blog" ng-click="modalOpen = true">BLOG</a></li>
-     
-</div>
-
-<div class="wrapperloading" ng-show="loading">
-  <div class="loading up"></div>
-  <div class="loading down"></div>
-</div>
-
-
-<div class="content-main" ng-show="modalOpen">
- <div class="close"><a ng-href="#/"><i class="fa fa-times fa-2x" ng-click="modalOpen = false"></i></a></div>
-  <div ng-view=""></div>
-</div>
-
- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-         <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
-<script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script>
-<script src="http://threejs.org/examples/js/loaders/MTLLoader.js"></script>
-		<script src="http://threejs.org/examples/js/loaders/OBJMTLLoader.js"></script>
-  
-   <script>
-
-    
-    </script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+    <![endif]--> <!-- Add your site or application content here --> <div class="container content"> <h1>LYCRA.<span class="">b</span><span class="">e</span><span class="">a</span><span class="">t</span><span class="">s</span></h1> </div> <div class="content1"> <a ng-href="#/music" ng-click="modalOpen = true">MUSIC</a><br> <a ng-href="#/info" ng-click="modalOpen = true">INFO</a><br> <a ng-href="#/bio" ng-click="modalOpen = true">BIO</a><br> <a ng-href="#/portfolio" ng-click="modalOpen = true">PORTFOLIO</a><br> <a ng-href="#/blog" ng-click="modalOpen = true">BLOG</a> </div> <div class="wrapperloading" ng-show="loading"> <div class="loading up"></div> <div class="loading down"></div> </div> <div class="content-main" ng-show="modalOpen"> <div class="close"><a ng-href="#/"><i class="fa fa-times fa-2x" ng-click="modalOpen = false"></i></a></div> <div ng-view=""></div> </div> <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script> <script src="http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script> <script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script> <script src="http://threejs.org/examples/js/loaders/MTLLoader.js"></script> <script src="http://threejs.org/examples/js/loaders/OBJMTLLoader.js"></script> <script></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-        
-
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/bio.js"></script>
-        <script src="scripts/controllers/portfolio.js"></script>
-        <script src="scripts/controllers/blog.js"></script>
-        <!-- endbuild -->
-</body>
-</html>
+       ga('send', 'pageview');</script> <script src="scripts/vendor.99ae0e59.js"></script> <script src="scripts/scripts.e2bd447a.js"></script>  
