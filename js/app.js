@@ -416,6 +416,11 @@ angular.module('starter', ['ionic'])
                 // console.log(particles);
                 scene.add(particles);
 
+var hammertime = new Hammer(contentBox);
+hammertime.on('pan', function(ev) {
+    console.log(ev);
+    mouse.y = ev.deltaY;
+});
 
 
 
@@ -624,14 +629,14 @@ angular.module('starter', ['ionic'])
                 var e = ev.originalEvent;
                 console.log(ev);
 
-                mouse.y = ev.touches[0].clientY;
+                //mouse.y = ev.touches[0].clientY;
             };
 
             function onTouchEnd(ev) {
                 var e = ev.originalEvent;
                 console.log(ev);
 
-                mouse.y = ev.touches[0].clientY;
+                //mouse.y = ev.touches[0].clientY;
             };
             function onMouseScroll(event) {
 
