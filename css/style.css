@@ -5,6 +5,9 @@ body {
    overflow: hidden;
 }
 
+html, body {
+    overflow: hidden;
+}
 h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
