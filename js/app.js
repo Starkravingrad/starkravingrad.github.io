@@ -946,9 +946,18 @@ hammertime.on('pan', function(ev) {
 
                 requestAnimationFrame(animate);
                 group1.children[0].geometry.verticesNeedUpdate = true;
+                
+                $(window).bind(
+  'touchmove',
+   function(e) {
+    e.preventDefault();
+  }
+);
 
                 update(clock.getDelta());
                 render(clock.getDelta());
+                
+                
             }
 
             function resize() {
