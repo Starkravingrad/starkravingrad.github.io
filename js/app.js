@@ -63,7 +63,7 @@ angular.module('starter', ['ionic'])
                         }]
 
                 },
-                                {
+                {
                     header: 'Websites',
                     children: [
                         {
@@ -226,7 +226,7 @@ angular.module('starter', ['ionic'])
             init();
 
             function init() {
-                
+
                 var tones = [];
 
                 var audio = new Audio('/assets/lycrabeats-bg.wav');
@@ -267,12 +267,12 @@ angular.module('starter', ['ionic'])
                 initControls();
 
                 $('document').ready(function() {
-                    
-                                    $(".card").hover(function() {
-                                        var randomClip = Math.floor(Math.random() * 3);
-                                    console.log(randomClip);    
-                    tones[randomClip].play();
-                });
+
+                    $(".card").hover(function() {
+                        var randomClip = Math.floor(Math.random() * 3);
+                        console.log(randomClip);
+                        tones[randomClip].play();
+                    });
 
                     // We need to duplicate the whole body of the website so if you scroll down you can see both the bottom and the top at the same time. Before we do this we need to know the original height of the website.
                     var origDocHeight = document.body.offsetHeight;
@@ -416,11 +416,11 @@ angular.module('starter', ['ionic'])
                 // console.log(particles);
                 scene.add(particles);
 
-var hammertime = new Hammer(contentBox);
-hammertime.on('pan', function(ev) {
-    console.log(ev);
-    mouse.y = ev.deltaY;
-});
+                var hammertime = new Hammer(contentBox);
+                hammertime.on('pan', function(ev) {
+                    console.log(ev);
+                    mouse.y = ev.deltaY;
+                });
 
 
 
@@ -606,20 +606,11 @@ hammertime.on('pan', function(ev) {
             //                 }
             //             }
 
-            function populateBuildings() {
-
-
-
-
-            };
-
             function onMouseMove(event) {
 
                 // calculate mouse position in normalized device coordinates
                 // (-1 to +1) for both components
 
-                mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-                mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
 
                 //console.log(mouse);
                 //console.log(mouse.x);
@@ -946,18 +937,18 @@ hammertime.on('pan', function(ev) {
 
                 requestAnimationFrame(animate);
                 group1.children[0].geometry.verticesNeedUpdate = true;
-                
+
                 $(window).bind(
-  'touchmove',
-   function(e) {
-    e.preventDefault();
-  }
-);
+                    'touchmove',
+                    function(e) {
+                        e.preventDefault();
+                    }
+                );
 
                 update(clock.getDelta());
                 render(clock.getDelta());
-                
-                
+
+
             }
 
             function resize() {
